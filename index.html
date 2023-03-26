@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.jpg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  
+  <title> Excel Weather - Your ultimate source for weather forecasts. </title>
+</head>
+
+<body>
+  <div class="preloader">
+    <div class="loader"></div>
+    <p style="letter-spacing: 1px;word-spacing: 2px;">Fetching Weather Data...</p>
+    <!-- <p>Loading weather data...</p> -->
+  </div>
+  <div id="root"></div>
+  <script>
+    window.addEventListener("load", function () {
+      const loader = document.querySelector(".preloader");
+      setTimeout(function () {
+        loader.style.display = "none";
+      }, 2000);
+    });
+
+
+  </script>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>
